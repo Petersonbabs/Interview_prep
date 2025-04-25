@@ -38,7 +38,7 @@ const AuthForm = ({ type }: { type: FormType }) => {
    setSubmittingForm(true)
    try {
      if(type === "sign-in"){
-       toast.success("Welcome back!")
+       toast.success("Welcome back!" + values)
        router.push("/")
       } else {
         toast.success("Welcome on board! Please signin")
@@ -46,6 +46,7 @@ const AuthForm = ({ type }: { type: FormType }) => {
       }
     } catch (error) {
       toast.error("There was an error")
+      console.log(error);
     } finally{
       setSubmittingForm(false)
     }
