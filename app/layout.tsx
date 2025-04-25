@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 // import {  Mona_Sans } from "next/font/google";
 import "./globals.css";
 import { Toaster } from "sonner";
-import NetworkProgress from "@/components/NetworkProgress";
+// import NetworkProgress from "@/components/NetworkProgress";
 
 // const monaSans = Mona_Sans({
 //   variable: "--font-mona-sans",
@@ -29,10 +29,10 @@ export default function RootLayout({
         suppressHydrationWarning
         style={{ fontFamily: "var(--font-mona-sans)" }}
       >
-        <NetworkProgress>
+        {/* <NetworkProgress> */}
           <Toaster />
           {children}
-        </NetworkProgress>
+        {/* </NetworkProgress> */}
       </body>
     </html>
   );
