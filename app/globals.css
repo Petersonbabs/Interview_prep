@@ -157,6 +157,10 @@
   li {
     @apply text-light-100;
   }
+
+  .text-body{
+    font-size: 14px;
+  }
 }
 
 @layer components {

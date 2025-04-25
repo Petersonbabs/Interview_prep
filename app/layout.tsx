@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 // import {  Mona_Sans } from "next/font/google";
 import "./globals.css";
 import { Toaster } from "sonner";
+import GlobalProvider from "@/components/GlobalProvider";
 // import NetworkProgress from "@/components/NetworkProgress";
 
 // const monaSans = Mona_Sans({
@@ -30,9 +31,11 @@ export default function RootLayout({
         style={{ fontFamily: "var(--font-mona-sans)" }}
       >
         {/* <NetworkProgress> */}
+        <GlobalProvider>
           <Toaster />
           {children}
-        {/* </NetworkProgress> */}
+          {/* </NetworkProgress> */}
+        </GlobalProvider>
       </body>
     </html>
   );
