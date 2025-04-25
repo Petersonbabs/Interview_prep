@@ -210,7 +210,7 @@
     }
 
     .btn {
-      @apply !w-full !bg-primary-200 !text-dark-100 hover:!bg-primary-200/80 !rounded-full !min-h-10 !font-bold !px-5 cursor-pointer disabled:!bg-dark-200 disabled:!text-primary-100 disabled:!cursor-not-allowed;
+      @apply !w-full !bg-primary-200 !text-dark-100 hover:!bg-primary-200/80 !rounded-full !min-h-10 !font-bold !px-5 cursor-pointer disabled:!bg-dark-200 disabled:!text-primary-100 disabled:!cursor-not-allowed transition-opacity active:opacity-70;
     }
   }
 
